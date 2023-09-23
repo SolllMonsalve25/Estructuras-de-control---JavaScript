@@ -37,13 +37,13 @@ if (calificacion1 >= 1 && calificacion1 <= 10 &&
     }
     */
 
-    /*EJERCICIO 3: Dados 2 numeros A y B, determinar si A es mayor, menor o igual que B*/
+/*EJERCICIO 3: Dados 2 numeros A y B, determinar si A es mayor, menor o igual que B*/
 
 
 
 
 
-    /*EJERCICIO 4: Que lea dos numeros y los imprima en forma ascendente
+ /*EJERCICIO 4: Que lea dos numeros y los imprima en forma ascendente
 
     var numero1 = parseFloat(prompt("Ingrese el primer numero:"));
     var numero2 = parseFloat(prompt("Ingrese el segundo numero"));
@@ -55,24 +55,43 @@ if (calificacion1 >= 1 && calificacion1 <= 10 &&
 
 
 
-    /*EJERCICIO 5: Dado el peso de una persona:
+/*EJERCICIO 5: Dado el peso de una persona:
     A. Si es peso es menor o igual a 40 y logramos que muestre el mensaje "Persona baja de peso"
     B. Si el peso es entre 41kg  y 70kg, muestre el mensaje "Persona en peso promedio"
     C. Si el peso es mayor a 71kg. muestre el mensaje "Persona con sobrepeso"
 
-    var peso =parseInt(prompt("Ingrese su peso en Kg"));
+    var peso = parseInt(prompt("Ingrese su peso en Kg"));
     if (peso <= 40) {
-        alert("Persona baja de peso");
+        alert("Persona baja de peso.");
     }
-    else if(peso >=41 && peso <= 70) {
+    else if(peso >= 41 && peso <= 70) {
         alert("persona peso promedio");
     }
     else if(peso > 70) {
-        alert("Persona con sobrepeso");
+        alert("Persona con sobrepeso.");
     }
     else{
         alert("Valor ingresado no valido");
     }
-*/
+    */
 
+ /*EJERCICIO 6:
 
+    var numero = parseInt(prompt("Por favor ingrese un numero del 1 al 7"));
+    var diasSemanas = ["Lunes", "Martes", "MIercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
+    var dia = diasSemanas[numero - 1];
+    alert("El dia correspondiente al numero " + numero + " es " + dia + " . ");
+    */
+
+/*EJERCICIO 7:*/
+
+var compra = parseInt(prompt("ingrese el valor de la compra"));
+if (compra >1000) {
+    alert("La persona recibira un descuento del 20% por su compra");
+}
+else if(compra < 1000) {
+    alert("La persona recibira un 5% de descuento por su compra.");
+}
+else{
+    alert("Valor ingresado no valido");
+}
