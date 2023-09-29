@@ -83,15 +83,64 @@ if (calificacion1 >= 1 && calificacion1 <= 10 &&
     alert("El dia correspondiente al numero " + numero + " es " + dia + " . ");
     */
 
-/*EJERCICIO 7:*/
+/*EJERCICIO 7:
 
-var compra = parseInt(prompt("ingrese el valor de la compra"));
-if (compra >1000) {
-    alert("La persona recibira un descuento del 20% por su compra");
+let compr = prompt("Digite el precio de su compra");
+let descuento;
+if (compr >= 1000) {
+    descuento = compr * 0.2; 
+} else {
+    descuento = compr * 0.05;
 }
-else if(compra < 1000) {
-    alert("La persona recibira un 5% de descuento por su compra.");
+let pago = compr - descuento;
+alert("La cantidad a pagar es: "+pago);*/
+
+
+/* EJERCICIO 8:
+
+let NumHoras = prompt ("Digite el numero de horas trabajadas");
+let salario;
+    if(NumHoras <= 40) {
+        salario = NumHoras * 16000;
+    } else {
+        salario = NumHoras * 2000;
+    }
+alert ("Su salario semanal es de: "+ salario);*/
+
+
+/* EJERCICIO 9
+
+var nombre1 = promp ("Escriba el nombre de la primera persona");
+var edad1 = parseint(prompt ("Digite su edad"));
+var nombre2 = prompt ("Escriba el nombre de la segunda persona");
+var edad2= parseint(prompt ("Digite su edad"));
+var mayor;
+if (edad1>edad2){
+    mayor= nombre1;
+} else if (edad2 >edad1) {
+    mayor=nombre2
+} else {
+    mayor= "Tienen la misma edad"
 }
-else{
-    alert("Valor ingresado no valido");
+alert("La persona mayor es:" +mayor);*/
+
+
+/*EJERCICIO 10:  
+
+var cantidadCamisas= parseInt(prompt("ingrese la cantidad de camisas compradas"));
+var precioCamisas= parseFloat(prompt("Ingrese el precio de cada camisa"));
+var totalSinDescuento= cantidadCamisas*precioCamisas;
+var descuento;
+if (cantidadCamisas >= 3); {
+    descuento= totalSinDescuento*0,2;
+} else {
+    descuento= totalSinDescuento *0.1;
 }
+var totalConDescuento= totalSinDescuento-descuento;
+alert ("total a pagar por las camisas:" + totalConDescuento.toFixed(2) +"pesos");*/
+
+
+/*EJERCICIO 11:*/
+
+var numero1 = parseFloat(prompt("Escriba el primer numero"));
+var numero2 = parseFloat(prompt("Escriba el segundo numero"));
