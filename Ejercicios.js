@@ -140,7 +140,36 @@ var totalConDescuento= totalSinDescuento-descuento;
 alert ("total a pagar por las camisas:" + totalConDescuento.toFixed(2) +"pesos");*/
 
 
-/*EJERCICIO 11:*/
+/*EJERCICIO 11:
 
 var numero1 = parseFloat(prompt("Escriba el primer numero"));
 var numero2 = parseFloat(prompt("Escriba el segundo numero"));
+if (numero1 === numero2){
+    var resultado = numero1 * numero2;
+    alert("El resultado de la multiplicacion es:"+ resultado); }
+    else if ("numero1>numero2"){
+        var resultado = numero1 - numero2;
+        alert("el resultado de la resta es:" + resultado);
+    } else {
+        var resultado = numero1 + numero2;
+        alert("El resultado de la suma es: " + resultado);
+    } */
+
+/*EJERCICIO 12:
+
+let opcion=prompt("1.suma 2.resta 3.division 4.multiplicacion");
+let numero1=prompt("Digite el primer número");
+let numero2=prompt("Digite el segundo número");
+if(opcion==1){
+    suma=parseInt(numero1)+parseInt(numero2);
+    alert("La suma es: "+suma);
+} else if(opcion==2){
+    resta=parseInt(numero1)-parseInt(numero2);
+    alert("La resta es: "+resta);
+} else if(opcion==3){
+    division=parseInt(numero1)/parseInt(numero2);
+    alert("La division es: "+division);
+} else {
+    multiplicacion=parseInt(numero1)*parseInt(numero2);
+    alert("La multiplicacion es: "+multiplicacion);
+} */
